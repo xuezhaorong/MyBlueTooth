@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/List_Fragment"
+        android:icon="@drawable/ic_bluetooth"
+        android:title="蓝牙" />
+
+    <item
+        android:id="@+id/Message_Fragment"
+        android:icon="@drawable/ic_message"
+        android:title="消息" />
+</menu>

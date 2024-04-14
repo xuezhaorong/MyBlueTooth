@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Permission_Fragment">
+
+    <fragment
+        android:id="@+id/Permission_Fragment"
+        android:name="com.example.mybluetooth.fragment.PermissionFragment"
+        android:label="BlueToothHelper">
+
+        <action
+            android:id="@+id/action_Permission_Fragment_to_List_Fragment"
+            app:destination="@id/List_Fragment"
+            app:popUpTo="@id/Permission_Fragment"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/List_Fragment"
+        android:name="com.example.mybluetooth.fragment.ListFragment"
+        android:label="ListFragment">
+
+        <action
+            android:id="@+id/action_List_Fragment_to_Permission_Fragment"
+            app:destination="@id/Permission_Fragment"
+            app:popUpTo="@id/List_Fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Message_Fragment"
+        android:name="com.example.mybluetooth.fragment.MessageFragment"
+        android:label="DebugFragment" >
+
+
+    </fragment>
+
+</navigation>
